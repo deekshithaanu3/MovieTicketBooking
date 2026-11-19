@@ -110,10 +110,10 @@ const SignUpPage = () => {
       return;
     }
 
-    // Log form data (hide password)
+    // Log form data (Mask password)
     console.log("📝 Form Submission Data:", {
       ...formData,
-      password: "***" + formData.password.slice(-2),
+      password: "******",
     });
 
     setIsLoading(true);
